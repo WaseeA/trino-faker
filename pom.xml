@@ -22,7 +22,7 @@
     </licenses>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/nineinchnick/trino-example-plugin.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/WaseeA/trino-example-plugin.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
@@ -30,7 +30,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Maven Packages</name>
-            <url>https://maven.pkg.github.com/nineinchnick/trino-example-plugin</url>
+            <url>https://maven.pkg.github.com/WaseeA/trino-example-plugin</url>
         </repository>
     </distributionManagement>
 
