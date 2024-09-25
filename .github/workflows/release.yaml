@@ -51,8 +51,8 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Prepare maven
-        run: mvn clean
-             mvn install
+        run: ./mvnw -B clean
+             ./mvnw -B install
 
       - name: Prepare release
         run: ./mvnw -B release:prepare
