@@ -35,6 +35,11 @@ jobs:
         run: |
           git config user.name "${{ github.event.head_commit.committer.name }}"
           git config user.email "${{ github.event.head_commit.committer.email }}"
+      
+      - name: Fetch and merge changes
+        run: |
+          git fetch origin main
+          git merge origin/main --ff-only  # Use fast-forward merge to avoid conflicts
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
