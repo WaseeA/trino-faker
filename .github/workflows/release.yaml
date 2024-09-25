@@ -50,6 +50,10 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Prepare maven
+        run: mvn clean
+             mvn install
+
       - name: Prepare release
         run: ./mvnw -B release:prepare
         env:
