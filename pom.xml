@@ -22,7 +22,7 @@
     </licenses>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/WaseeA/trino-example-plugin.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/WaseeA/trino-faker.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
